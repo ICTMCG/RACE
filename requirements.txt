@@ -1,0 +1,16 @@
+# It is recommended to install PyTorch and PyTorch Geometric first by following the
+# official instructions on their websites to ensure CUDA compatibility.
+#
+# 1. PyTorch: https://pytorch.org/get-started/locally/
+# 2. PyTorch Geometric: https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+
+transformers
+scikit-learn
+numpy
+tensorboard
+networkx
+matplotlib
+isanlp_rst
+pandas
+pyarrow
+tqdm

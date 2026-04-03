@@ -1,0 +1,52 @@
+{
+  "backbone_model_path": "Facebook-AI/roberta-base",
+  "data_path": "./data/hart_split/train_graph.jsonl",
+  "val_data_path": "./data/hart_split/val_graph.jsonl",
+  "test_data_path": "./data/hart_split/test_graph.jsonl",
+  "output_dir": "results",
+  "bert_dim": 768,
+  "max_seq_length": 512,
+  "device": "cuda",
+  "seed": 3407,
+  "num_workers": 4,
+  "print_freq": 10,
+  "dist_url": "env://",
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 2.9e-5,
+  "lr_scheduler": {
+    "type": "linear",
+    "warmup_ratio": 0.1
+  },
+  "weight_decay": 0.01,
+  "clip_grad_norm": 1.0,
+  "loss": {
+    "use_supcon": true,
+    "temperature": 0.07
+  },
+  "use_stratified_sampler": true,
+  "early_stopping_patience": 5,
+  "early_stopping_metric": "f1_macro",
+  "num_classes": 4,
+  "feature_dim": 128,
+  "gnn_hidden_dim": 512,
+  "num_gnn_layers": 2,
+  "num_heads": 4,
+  "unfreeze_bert_layers": 1,
+  "relation_table_path": "./utils/relation_table.txt",
+  "graph": {
+    "graph_builder_type": "rst",
+    "gnn_layer_type": "RGCN",
+    "rst_use_nuclearity": false,
+    "use_distinct_reverse_edges": false,
+    "rgcn_num_bases": 10,
+    "gnn_dropout": 0.5,
+    "proj_dropout": 0.1,
+    "pooling_strategy": "root",
+    "classifier_type": "mlp",
+    "classifier_dropout": 0.1,
+    "debug_log_zero_feature_ratio": false,
+    "debug_save_graph_path": "",
+    "debug_save_batch_indices": []
+  }
+}
