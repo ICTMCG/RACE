@@ -208,5 +208,13 @@ RACE/
 If you find this work useful, please cite our paper:
 
 ```bibtex
-Coming soon...
+@misc{li2026finalactormodelingdual,
+  title={Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection},
+  author={Yang Li and Qiang Sheng and Zhengjia Wang and Yehan Yang and Danding Wang and Juan Cao},
+  year={2026},
+  eprint={2604.04932},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2604.04932},
+}
 ```
