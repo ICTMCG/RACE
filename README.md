@@ -1,8 +1,13 @@
 # RACE: Rhetorical Analysis for Creator-Editor Modeling
 
-This repository contains the implementation of **RACE** (_Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection_).
+[![arXiv](https://img.shields.io/badge/arXiv-2604.04932-b31b1b.svg)](https://arxiv.org/abs/2604.04932)
+[![ACL-2026](https://img.shields.io/badge/ACL-2026--Main-red.svg)](https://arxiv.org/abs/2604.04932)
 
-RACE leverages Rhetorical Structure Theory (RST) to construct discourse-level graphs from documents, then applies Relational Graph Convolutional Networks (RGCN) to learn structure-aware representations for fine-grained AI-generated text detection.
+This repository contains the implementation of **RACE** (_Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection_), which is accepted by **ACL 2026 Main Conference**.
+
+> We are currently cleaning up the codebase, and there might be some omissions during this process. Please feel free to raise an issue if you meet any problems when using this code.
+
+RACE leverages Rhetorical Structure Theory (RST) to construct logical graphs from documents, then applies Relational Graph Convolutional Networks (RGCN) to learn structure-aware representations for fine-grained AI-generated text detection.
 
 ## 1. Installation
 
@@ -49,7 +54,8 @@ A sample data file is provided in `data/example/sample_data.jsonl` for reference
 
 ### Full Preprocessing Pipeline (Recommended)
 
-A one-command script is provided to process the Hart dataset end-to-end:
+1. Place the [HART dataset](https://github.com/baoguangsheng/truth-mirror) into the `data/` directory to form the `data/truth-mirror/` structure.
+2. Run the one-command script to process it end-to-end and generate the training-ready `data/hart_split/` directory:
 
 ```bash
 bash scripts/prepare_data.sh
@@ -89,7 +95,12 @@ python utils/split_dataset.py
 ```
 RACE/
 ├── data/
-│   └── hart_split/
+│   ├── truth-mirror/          # Raw dataset from HART
+│   │   ├── benchmark/
+│   │   │   ├── hart/
+│   │   │   └── raid/
+│   │   └── assets/
+│   └── hart_split/            # Generated training-ready graphs
 │       ├── train_graph.jsonl
 │       ├── val_graph.jsonl
 │       ├── test_graph.jsonl
@@ -190,4 +201,12 @@ RACE/
 ├── train.py          # Main training entry point
 ├── test.py           # Main evaluation entry point
 └── requirements.txt  # Python dependencies
+```
+
+## 7. Citation
+
+If you find this work useful, please cite our paper:
+
+```bibtex
+Coming soon...
 ```
