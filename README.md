@@ -18,6 +18,7 @@ RACE leverages Rhetorical Structure Theory (RST) to construct logical graphs fro
   Please install these first, following the official guides for your CUDA version to ensure GPU support:
   - [PyTorch](https://pytorch.org/get-started/locally/)
   - [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)
+- [isanlp_rst](https://github.com/tchewik/isanlp_rst)
 
 ### Install Dependencies
 
@@ -70,7 +71,7 @@ This runs the following 4 steps automatically:
 | 3. Flattening  | `utils/flatten_data_pipeline.py`     | `master_rst_parsed.jsonl` → `flattened_articles.jsonl`                 |
 | 4. Splitting   | `utils/split_dataset.py`             | `flattened_articles.jsonl` → `hart_split/{train,val,test}_graph.jsonl` |
 
-> **Note**: Step 2 (RST Parsing) requires the `isanlp_rst` parser. Set the `RST_PARSER_PATH` in your `.env` file before running.
+> **Note**: Step 2 (RST Parsing) requires the [`isanlp_rst`](https://github.com/tchewik/isanlp_rst) parser. Set the `RST_PARSER_PATH` in your `.env` file before running.
 
 ### Run Steps Individually
 
