@@ -1,7 +1,7 @@
 # RACE: Rhetorical Analysis for Creator-Editor Modeling
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.04932-b31b1b.svg)](https://arxiv.org/abs/2604.04932)
-[![ACL-2026](https://img.shields.io/badge/ACL-2026--Main-red.svg)](https://arxiv.org/abs/2604.04932)
+[![ACL-2026](https://img.shields.io/badge/ACL-2026--Main-red.svg)](https://aclanthology.org/2026.acl-long.235/)
 
 This repository contains the implementation of **RACE** (_Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection_), which is accepted by **ACL 2026 Main Conference**.
 
@@ -209,13 +209,25 @@ RACE/
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{li2026finalactormodelingdual,
-  title={Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection},
-  author={Yang Li and Qiang Sheng and Zhengjia Wang and Yehan Yang and Danding Wang and Juan Cao},
-  year={2026},
-  eprint={2604.04932},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2604.04932},
+@inproceedings{li-etal-2026-beyond-final,
+    title = "Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained {LLM}-Generated Text Detection",
+    author = "Li, Yang  and
+      Sheng, Qiang  and
+      Wang, Zhengjia  and
+      Yang, Yehan  and
+      Wang, Danding  and
+      Cao, Juan",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.235/",
+    pages = "5188--5203",
+    ISBN = "979-8-89176-390-6"
 }
 ```
