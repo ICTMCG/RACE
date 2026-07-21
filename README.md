@@ -9,6 +9,10 @@ This repository contains the implementation of **RACE** (_Beyond the Final Actor
 
 RACE leverages Rhetorical Structure Theory (RST) to construct logical graphs from documents, then applies Relational Graph Convolutional Networks (RGCN) to learn structure-aware representations for fine-grained AI-generated text detection.
 
+## News
+
+- 2026-7-21: Since the data partitioning is also random, we have uploaded both the data partition used in the paper and the model weights used in the experiments; these can be downloaded via Google Drive: [data-and-model](https://drive.google.com/drive/u/1/folders/1goJ9F5uXhBTabURr9q23KhbPxiYNFK-8)
+
 ## 1. Installation
 
 ### Requirements
